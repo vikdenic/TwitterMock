@@ -14,7 +14,8 @@
 		933D44141C5C2AF80016DBE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 933D44131C5C2AF80016DBE3 /* Assets.xcassets */; };
 		933D44171C5C2AF80016DBE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933D44151C5C2AF80016DBE3 /* LaunchScreen.storyboard */; };
 		933D441F1C5C35A60016DBE3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D441E1C5C35A60016DBE3 /* Extensions.swift */; };
-		933D44211C5C3E790016DBE3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D44201C5C3E790016DBE3 /* HomeViewController.swift */; };
+		933D44231C5C48510016DBE3 /* HomeTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D44221C5C48510016DBE3 /* HomeTableTableViewController.swift */; };
+		933D44271C5C4C850016DBE3 /* NewPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D44261C5C4C850016DBE3 /* NewPostTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +29,8 @@
 		933D44161C5C2AF80016DBE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		933D44181C5C2AF80016DBE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		933D441E1C5C35A60016DBE3 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		933D44201C5C3E790016DBE3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		933D44221C5C48510016DBE3 /* HomeTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableTableViewController.swift; sourceTree = "<group>"; };
+		933D44261C5C4C850016DBE3 /* NewPostTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostTableViewController.swift; sourceTree = "<group>"; };
 		CF2B79BA7E34365E3DC3E903 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,15 +85,32 @@
 			isa = PBXGroup;
 			children = (
 				933D440C1C5C2AF80016DBE3 /* AppDelegate.swift */,
-				933D44201C5C3E790016DBE3 /* HomeViewController.swift */,
-				933D440E1C5C2AF80016DBE3 /* LoginViewController.swift */,
-				933D441E1C5C35A60016DBE3 /* Extensions.swift */,
 				933D44101C5C2AF80016DBE3 /* Main.storyboard */,
+				933D44241C5C493A0016DBE3 /* View Controllers */,
+				933D44251C5C49410016DBE3 /* Utilities */,
 				933D44131C5C2AF80016DBE3 /* Assets.xcassets */,
 				933D44151C5C2AF80016DBE3 /* LaunchScreen.storyboard */,
 				933D44181C5C2AF80016DBE3 /* Info.plist */,
 			);
 			path = Realtimesharing;
+			sourceTree = "<group>";
+		};
+		933D44241C5C493A0016DBE3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				933D440E1C5C2AF80016DBE3 /* LoginViewController.swift */,
+				933D44221C5C48510016DBE3 /* HomeTableTableViewController.swift */,
+				933D44261C5C4C850016DBE3 /* NewPostTableViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		933D44251C5C49410016DBE3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				933D441E1C5C35A60016DBE3 /* Extensions.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,9 +236,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				933D440F1C5C2AF80016DBE3 /* LoginViewController.swift in Sources */,
+				933D44231C5C48510016DBE3 /* HomeTableTableViewController.swift in Sources */,
 				933D441F1C5C35A60016DBE3 /* Extensions.swift in Sources */,
+				933D44271C5C4C850016DBE3 /* NewPostTableViewController.swift in Sources */,
 				933D440D1C5C2AF80016DBE3 /* AppDelegate.swift in Sources */,
-				933D44211C5C3E790016DBE3 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
