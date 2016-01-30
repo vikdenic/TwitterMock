@@ -17,16 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        let ref = Firebase(url: "https://examples-k9i8infracvfyzgxk0t.firebaseio-demo.com/web/struct/join-example")
-
-        ref.childByAppendingPath("users/rick/groups").observeEventType(.Value) { (snapshot: FDataSnapshot!) -> Void in
-            print(snapshot.value["bravo"])
-        }
-
-//        ref.observeEventType(.Value) { (snapshot: FDataSnapshot!) -> Void in
-//            ref.childByAppendingPath("users/rick")
-//        }
-
         return true
     }
 

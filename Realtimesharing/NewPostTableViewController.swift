@@ -19,9 +19,7 @@ class NewPostTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.tableFooterView = UIView(frame: CGRect.zero)
-        func textFieldDidChange(textField: UITextField) {
-            submitButton.enabled = !textField.text!.isEmpty
-        }
+        postTextField.addTarget(self, action: "textFieldDidChange:", forControlEvents: UIControlEvents.EditingChanged)
     }
 
     @IBAction func onCancelTapped(sender: UIBarButtonItem) {

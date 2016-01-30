@@ -53,6 +53,7 @@ class HomeTableTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("PostCell", forIndexPath: indexPath)
         let keys = Array(self.posts.keys)
+        print(self.posts.keys)
         let post = posts[keys[indexPath.row]] as String! //Dictionaries have keys. 
                                                          //So we get the key from keys[indexPath.row]
                                                          //and access a post with its key
